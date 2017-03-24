@@ -47,8 +47,11 @@ def f(data):
 
 def main():
     num = input_num()
-    date = input_name(num)
-    for d in date.sort(key=lambda x: x[1]):
+    data = input_name(num)
+    print(data)
+    print(type(data))
+    data.sort(key=lambda x: x[1])
+    for d in data:
         f(d)
 
 
